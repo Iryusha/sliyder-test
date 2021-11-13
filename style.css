@@ -1,11 +1,11 @@
 .section-g {
   /* height: 600px; */
 
-  background-color: black;
+  /* background-color: black; */
   position: relative;
-  padding-top: 29px;
+  /* padding-top: 29px;
   padding-left: 20px;
-  padding-right: 20px;
+  padding-right: 20px; */
 }
 .content-g {
   width: 100%;
@@ -16,15 +16,15 @@
   max-width: 1100px;
   width: 100%;
   height: 500px;
-  /* overflow: hidden; */
-  background-color: black;
+  overflow: hidden;
+  /* background-color: black; */
 }
-.middle {
+/* .middle {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, 50%);
-}
+} */
 .navigation {
   position: absolute;
   bottom: 16px;
@@ -85,26 +85,32 @@ input[name="r"] {
 }
 .text {
   font-family: DM Sans;
-  font-style: Medium;
+  font-style: medium;
   font-size: 12px;
-  line-height: 31px;
+  line-height: 26px;
   /* line-height: 255%; */
-  align-items: Center;
-  justify-content: center;
+  /* align-items: Center;
+  justify-content: center; */
 
-  background-color: white;
+  /* background-color: white; */
 }
 .gradient {
-  width: 100%;
+  /* margin-top: 30px; */
+  box-sizing: border-box;
+  width: 80%;
   max-width: 1280px;
   /* width: 400px; */
   /* height: 200px; */
   height: auto;
   background: repeating-linear-gradient(
-    red 0px,
-    red 20px,
-    blue 20px,
-    blue 40px
+    #fafafa 0px,
+    #fafafa 25px,
+    #e1e1e1 25px,
+    #e1e1e1 26px
   );
-  padding-left: 30px;
+  padding: 30px 30px 30px 30px;
+  margin: 30px auto;
+  align-items: center;
+  justify-content: center;
+  display: flex;
 }
