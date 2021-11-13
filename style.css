@@ -88,6 +88,7 @@ input[name="r"] {
   font-style: medium;
   font-size: 12px;
   line-height: 26px;
+  text-align: center;
   /* line-height: 255%; */
   /* align-items: Center;
   justify-content: center; */
@@ -112,5 +113,11 @@ input[name="r"] {
   margin: 30px auto;
   align-items: center;
   justify-content: center;
+  display: flex;
+}
+.guest {
+  align-items: center;
+  justify-content: center;
+  /* margin: auto; */
   display: flex;
 }
