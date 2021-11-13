@@ -1,8 +1,12 @@
+* {
+  box-sizing: border-box;
+}
+
 .section-g {
-  /* height: 600px; */
+  height: auto;
 
   /* background-color: black; */
-  position: relative;
+  /* position: relative; */
   /* padding-top: 29px;
   padding-left: 20px;
   padding-right: 20px; */
@@ -32,6 +36,27 @@
   transform: translateX(-50%);
   display: flex;
 }
+.point {
+  display: inline;
+  margin-right: 10px;
+  background-color: #c7133e;
+  height: 4px;
+  width: 4px;
+  /* margin: 6px;
+  background-color: rgb(172, 15, 125); */
+  opacity: 0.5;
+  border-radius: 10px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.title {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  margin: auto;
+  justify-content: center;
+}
+
 .bar {
   height: 8px;
   width: 8px;
@@ -41,11 +66,46 @@
   opacity: 0.5;
   border-radius: 10px;
   transition: all 0.4s ease;
+  position: relative;
 }
-.bar:hover {
+.bar svg {
+  display: none;
+  height: 20px;
+  width: 20px;
+}
+.bar:hover,
+:focus {
   opacity: 1;
   transform: scale(1.1);
+  background: none;
 }
+.bar:hover svg,
+:focus svg {
+  display: block;
+}
+.bar.current {
+  display: block;
+}
+/* .simbol {
+  /* content: ""; */
+/* width: 100%;
+  height: 4px; */
+/* position: relative; */
+/* top: 0px; */
+/* left: 0px; */
+/* z-index: 2; */
+.simbol {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  z-index: 1;
+}
+
+/* .icon {
+  position: absolute;
+  /* top: 0px;
+  left: 0px; */
+
 input[name="r"] {
   position: absolute;
   visibility: hidden;
@@ -86,34 +146,49 @@ input[name="r"] {
 .text {
   font-family: DM Sans;
   font-style: medium;
-  font-size: 12px;
-  line-height: 26px;
+  font-size: 15px;
+  line-height: 25px;
   text-align: center;
   /* line-height: 255%; */
   /* align-items: Center;
   justify-content: center; */
 
   /* background-color: white; */
+  z-index: 2;
 }
 .gradient {
   /* margin-top: 30px; */
-  box-sizing: border-box;
-  width: 80%;
+
+  /* width: 70%; */
   max-width: 1280px;
   /* width: 400px; */
   /* height: 200px; */
   height: auto;
   background: repeating-linear-gradient(
-    #fafafa 0px,
+    #fafafa 0,
     #fafafa 25px,
     #e1e1e1 25px,
     #e1e1e1 26px
   );
-  padding: 30px 30px 30px 30px;
+  padding: 10px;
+  /* padding: 10px 43px 66px 26px; */
+  margin: 30px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  position: relative;
+}
+.card {
+  padding: 20px;
+  width: 100%;
+  background-color: #fafafa;
+
   margin: 30px auto;
   align-items: center;
   justify-content: center;
   display: flex;
+  box-sizing: border-box;
+  position: relative;
 }
 .guest {
   align-items: center;
@@ -121,3 +196,26 @@ input[name="r"] {
   /* margin: auto; */
   display: flex;
 }
+
+/* .p {
+  width: 200px;
+  height: 200px;
+  background: red;
+  position: relative;
+}
+.c1 {
+  left: 10px;
+  width: 200px;
+  height: 200px;
+  background: green;
+  position: absolute;
+  z-index: 2;
+}
+.c2 {
+  left: 20px;
+  width: 200px;
+  height: 200px;
+  background: yellow;
+  position: absolute;
+  z-index: 1;
+} */
